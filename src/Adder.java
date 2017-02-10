@@ -3,7 +3,7 @@
  */
 public class Adder extends Arithmetic {
 
-    public boolean check (Integer a, Integer b){
+    public boolean check (int a, int b){
         boolean result;
 
         if (a >= b) {

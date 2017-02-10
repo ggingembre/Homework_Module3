@@ -6,10 +6,10 @@ public class Module3_Homework1 {
 
         bird birdObject = new bird();
 
-        birdObject.walk();
-        birdObject.fly();
+       // birdObject.walk();
+        // birdObject.fly();
         birdObject.sing();
-        birdObject.whoAmI();
+        // birdObject.whoAmI();
 
     }
 }
