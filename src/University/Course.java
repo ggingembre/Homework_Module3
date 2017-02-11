@@ -1,4 +1,4 @@
-/**
+package University; /**
  * Created by Guillaume Gingembre on 07/02/2017.
  */
 
@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 public class Course {
 
-    // the Course class has
+    // the University.Course class has
     // four fields
     private Calendar startDate;
     private String name;

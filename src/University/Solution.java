@@ -1,4 +1,4 @@
-/**
+package University; /**
  * Created by Guillaume Gingembre on 08/02/2017.
  */
 import java.util.GregorianCalendar;
@@ -38,7 +38,7 @@ public class Solution {
             CollegeStudent nKuz = new CollegeStudent ("Natasha", "Kuznietsova", 4, allProgramPlus, 20,
         "GoIT College", 100, 012345);
 
-        // create students using SpecialStudent-class constructors:
+        // create students using University.SpecialStudent-class constructors:
         CollegeStudent jDrean = new SpecialStudent("Jean", "Drean", 3);
         CollegeStudent lDrean = new SpecialStudent("Drean",allProgram);
         CollegeStudent maryna = new SpecialStudent(12345);

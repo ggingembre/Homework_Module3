@@ -1,3 +1,5 @@
+package BirdHomework;
+
 /**
  * Created by Guillaume Gingembre on 06/02/2017.
  */
@@ -14,4 +16,4 @@ public class Module3_Homework1 {
     }
 }
 
-// uses the bird public class and its methods created in another file called "bird".
+// uses the BirdHomework.bird public class and its methods created in another file called "BirdHomework.bird".

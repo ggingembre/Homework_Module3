@@ -1,3 +1,5 @@
+package University;
+
 /**
  * Created by Guillaume Gingembre on 08/02/2017.
  */
@@ -31,6 +33,6 @@ public class SpecialStudent extends CollegeStudent {
     }
 }
 
-    // Class SpecialStudent унаследован от CollegeStudent.
+    // Class University.SpecialStudent унаследован от University.CollegeStudent.
       //  Дополнительные поля long secretKey, String email.
-      //  Создайте 3 конструктора: 2 таких же, как и в CollegeStudent и один с аргументом secretKey.
+      //  Создайте 3 конструктора: 2 таких же, как и в University.CollegeStudent и один с аргументом secretKey.

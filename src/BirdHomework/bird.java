@@ -1,3 +1,5 @@
+package BirdHomework;
+
 /**
  * Created by Guillaume Gingembre on 06/02/2017.
  */
@@ -17,7 +19,7 @@ public class bird {
 
         public void sing(){
             String Song;
-            Song = "I am walking,\n" + "I am singing, \n" +  "I am flying, \n" + "I am a bird";
+            Song = "I am walking,\n" + "I am singing, \n" +  "I am flying, \n" + "I am a BirdHomework.bird";
             System.out.println(Song);
         }
 

@@ -1,3 +1,5 @@
+package University;
+
 /**
  * Created by Guillaume Gingembre on 07/02/2017.
  */
@@ -55,4 +57,4 @@ public class CollegeStudent extends Student {
 }
 
     // Дополнительные поля: String collegeName, int rating, long id.
-     //    Создайте 3 конструктора: 2 таких же, как и в Student and один с аргументами - всеми полями класса.
+     //    Создайте 3 конструктора: 2 таких же, как и в University.Student and один с аргументами - всеми полями класса.
