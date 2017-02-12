@@ -41,7 +41,7 @@ public class Solution {
         // create students using University.SpecialStudent-class constructors:
         CollegeStudent jDrean = new SpecialStudent("Jean", "Drean", 3);
         CollegeStudent lDrean = new SpecialStudent("Drean",allProgram);
-        CollegeStudent maryna = new SpecialStudent("Secret","Secret", 0,12345);
+        CollegeStudent maryna = new SpecialStudent(12345);
 
         // assign programs to two students, to see what happens
             jDrean.setCoursesTaken(new Course [] {java6,english,softSkills});

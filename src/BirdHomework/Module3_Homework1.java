@@ -5,19 +5,12 @@ package BirdHomework;
  */
 public class Module3_Homework1 {
     public static void main(String[] args) {
-        String Songs [] = new String[4];
-        int i;
-
-        Songs[0] = "I am walking";
-        Songs[1] = "I am flying";
-        Songs[2] = "I am singing";
-        Songs[3] = "I am a Bird";
 
         bird birdObject = new bird();
 
-        for (i = 0; i < Songs.length; i++) {
-            birdObject.sing(Songs[i]);
-        }
-
+        birdObject.sing("I am walking");
+        birdObject.sing("I am flying");
+        birdObject.sing("I am singing");
+        birdObject.sing("I am a Bird");
     }
 }

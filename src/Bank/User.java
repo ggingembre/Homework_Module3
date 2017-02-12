@@ -1,8 +1,8 @@
 package Bank;
-
 /**
  * Created by Guillaume Gingembre on 12/02/2017.
  */
+
 public class User {
     private String name;
     private int balance;
@@ -25,15 +25,28 @@ public class User {
     }
 
     public void withdraw(int summ){
-        double commissions;
+        double commissions, comRateSmall, comRateLarge;
+
+        comRateSmall = 0.05;
+        comRateLarge = 0.1;
 
         if (summ<1000){
-            commissions = summ*0.05;
+            commissions = summ * comRateSmall;
         } else {
-            commissions = summ * 0.1;
+            commissions = summ * comRateLarge;
         }
 
+        if (summ < (balance + commissions)){
         balance = (int) (balance - summ - commissions);
+        } else{
+            if (summ<1000){
+                System.out.println("You do not have enough funds for this transaction. Your balance is " + balance
+                        + " . Please try again with a lower amount. You can withdraw a maximum of: " + Math.floor(balance/(1+comRateSmall)));
+            }else{
+                System.out.println("You do not have enough funds for this transaction. Your balance is " + balance
+                        + " . Please try again with a lower amount. You can withdraw a maximum of: " + Math.floor(balance/(1+comRateSmall)));
+            }
+        }
     }
 
     public int companyNameLength(){

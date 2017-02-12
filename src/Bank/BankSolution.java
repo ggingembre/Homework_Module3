@@ -19,7 +19,7 @@ public class BankSolution {
 
         // make changes calling methods from user class
         Guillaume.paySalary();
-        Guillaume.withdraw(500);
+        Guillaume.withdraw(20000);
         Guillaume.monthIncreaser(1);
 
         // check results by printing Guillaume after changes
