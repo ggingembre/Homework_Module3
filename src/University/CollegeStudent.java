@@ -27,8 +27,6 @@ public class CollegeStudent extends Student {
        this.id = id;
     }
 
-    public CollegeStudent(){} // default constructor needed in order to create special student with only one argument secretKey
-
     // get and set methods
 
     public String getCollegeName() {

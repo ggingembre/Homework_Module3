@@ -23,8 +23,6 @@ public class Student {
         this.coursesTaken = coursesTaken;
     }
 
-    public Student(){}//default constructor needed in order to create special student with only one argument secretKey
-
     // get and set methods
 
     public void setFirstName(String firstName) {
