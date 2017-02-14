@@ -6,10 +6,10 @@ package BirdHomework;
 
 
 
-public class bird {
+public class Bird {
 
-        public void sing(String Song){
-            System.out.println(Song);
+        public void sing(String song){
+            System.out.println(song);
         }
 
 }

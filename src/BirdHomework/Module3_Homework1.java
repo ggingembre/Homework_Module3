@@ -6,7 +6,7 @@ package BirdHomework;
 public class Module3_Homework1 {
     public static void main(String[] args) {
 
-        bird birdObject = new bird();
+        Bird birdObject = new Bird();
 
         birdObject.sing("I am walking");
         birdObject.sing("I am flying");
