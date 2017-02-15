@@ -27,24 +27,24 @@ public class User {
     public void withdraw(int summ){
         double commissions, comRateSmall, comRateLarge;
 
-        comRateSmall = 0.05;
-        comRateLarge = 0.1;
+        comRateSmall = 1.05;
+        comRateLarge = 1.1;
 
         if (summ<1000){
-            commissions = summ * comRateSmall;
+            summ = (int) (summ * comRateSmall);
         } else {
-            commissions = summ * comRateLarge;
+            summ = (int) (summ * comRateLarge);
         }
 
-        if (summ < (balance + commissions)){
-        balance = (int) (balance - summ - commissions);
+        if (balance > summ){
+        balance = (balance - summ);
         } else{
             if (summ<1000){
                 System.out.println("You do not have enough funds for this transaction. Your balance is " + balance
-                        + " . Please try again with a lower amount. You can withdraw a maximum of: " + Math.floor(balance/(1+comRateSmall)));
+                        + " . Please try again with a lower amount. You can withdraw a maximum of: " + Math.floor(balance/comRateSmall) + ".\n");
             }else{
                 System.out.println("You do not have enough funds for this transaction. Your balance is " + balance
-                        + " . Please try again with a lower amount. You can withdraw a maximum of: " + Math.floor(balance/(1+comRateSmall)));
+                        + " . Please try again with a lower amount. You can withdraw a maximum of: " + Math.floor(balance/comRateLarge) + ".\n");
             }
         }
     }
